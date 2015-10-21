@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/isaacs/sax-js.git"
+    "url": "git://github.com/lucianopf/aws-lambda-event-identifier.git"
   },
   "keywords": [
     "aws",
