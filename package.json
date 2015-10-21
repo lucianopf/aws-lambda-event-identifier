@@ -1,0 +1,17 @@
+{
+  "name": "aws-lambda-event-identifier",
+  "version": "1.0.0",
+  "description": "Used to return a type of input event from aws lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "event",
+    "AWS"
+  ],
+  "author": "LucianoPF",
+  "license": "ISC"
+}
