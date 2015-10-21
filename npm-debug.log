@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'publish', './' ]
+2 info using npm@3.3.6
+3 info using node@v0.10.40
+4 verbose node symlink /usr/bin/node
+5 verbose publish [ './' ]
+6 silly cache add args [ './', null ]
+7 verbose cache add spec ./
+8 silly cache add parsed spec { raw: './',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: './',
+8 silly cache add   spec: '/home/lucianopf/git/aws-lambda-event-identifier',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /home/lucianopf/.npm/aws-lambda-event-identifier/1.0.0/package.tgz not in flight; packing
+10 info lifecycle aws-lambda-event-identifier@1.0.0~prepublish: aws-lambda-event-identifier@1.0.0
+11 silly lifecycle aws-lambda-event-identifier@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/lucianopf/.npm/aws-lambda-event-identifier/1.0.0/package.tgz',
+12 verbose tar pack   '/home/lucianopf/git/aws-lambda-event-identifier' ]
+13 verbose tarball /home/lucianopf/.npm/aws-lambda-event-identifier/1.0.0/package.tgz
+14 verbose folder /home/lucianopf/git/aws-lambda-event-identifier
+15 verbose addLocalTarball adding from inside cache /home/lucianopf/.npm/aws-lambda-event-identifier/1.0.0/package.tgz
+16 silly cache afterAdd aws-lambda-event-identifier@1.0.0
+17 verbose afterAdd /home/lucianopf/.npm/aws-lambda-event-identifier/1.0.0/package/package.json not in flight; writing
+18 verbose afterAdd /home/lucianopf/.npm/aws-lambda-event-identifier/1.0.0/package/package.json written
+19 silly publish { name: 'aws-lambda-event-identifier',
+19 silly publish   version: '1.0.0',
+19 silly publish   description: 'Used to return a type of input event from aws lambda',
+19 silly publish   main: 'index.js',
+19 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+19 silly publish   repository:
+19 silly publish    { type: 'git',
+19 silly publish      url: 'git://github.com/lucianopf/aws-lambda-event-identifier.git' },
+19 silly publish   keywords: [ 'aws', 'lambda', 'event', 'AWS' ],
+19 silly publish   author: { name: 'LucianoPF' },
+19 silly publish   license: 'ISC',
+19 silly publish   readme: '# aws-lambda-event-identifier\nUsed to return a type of input event from aws lambda\n\n## Installation\n\n    npm install aws-lambda-event-identifier\n\n\n## Usage\n\n\n```js\nvar identifier = require(\'aws-lambda-event-identifier\');\n\nexports.handler = function( event, context ) {\n  // Catch event\n  var data = event;\n  console.log(identifier.eventIdentifier(data));\n  context.done();\n}\n\n```\n',
+19 silly publish   readmeFilename: 'README.md',
+19 silly publish   gitHead: 'dcb211a7c6f39914d08b8c466135ba4bd3f6ecb3',
+19 silly publish   bugs: { url: 'https://github.com/lucianopf/aws-lambda-event-identifier/issues' },
+19 silly publish   homepage: 'https://github.com/lucianopf/aws-lambda-event-identifier#readme',
+19 silly publish   _id: 'aws-lambda-event-identifier@1.0.0',
+19 silly publish   _shasum: '55cbbde1eb4d70d52b4dd3ad0bcb9adba97a21dc',
+19 silly publish   _from: '.' }
+20 verbose getPublishConfig undefined
+21 silly mapToRegistry name aws-lambda-event-identifier
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry uri https://registry.npmjs.org/aws-lambda-event-identifier
+25 verbose publish registryBase https://registry.npmjs.org/
+26 silly publish uploading /home/lucianopf/.npm/aws-lambda-event-identifier/1.0.0/package.tgz
+27 verbose request uri https://registry.npmjs.org/aws-lambda-event-identifier
+28 verbose request sending authorization for write operation
+29 info attempt registry request try #1 at 16:19:06
+30 verbose request using bearer token for auth
+31 verbose request id 60defd25867fa934
+32 http request PUT https://registry.npmjs.org/aws-lambda-event-identifier
+33 http 403 https://registry.npmjs.org/aws-lambda-event-identifier
+34 verbose headers { 'content-type': 'application/json',
+34 verbose headers   'cache-control': 'max-age=60',
+34 verbose headers   'content-length': '95',
+34 verbose headers   'accept-ranges': 'bytes',
+34 verbose headers   date: 'Wed, 21 Oct 2015 18:19:06 GMT',
+34 verbose headers   via: '1.1 varnish',
+34 verbose headers   connection: 'keep-alive',
+34 verbose headers   'x-served-by': 'cache-atl6225-ATL',
+34 verbose headers   'x-cache': 'MISS',
+34 verbose headers   'x-cache-hits': '0',
+34 verbose headers   'x-timer': 'S1445451545.955613,VS0,VE699' }
+35 verbose request invalidating /home/lucianopf/.npm/registry.npmjs.org/aws-lambda-event-identifier on PUT
+36 error publish Failed PUT 403
+37 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : aws-lambda-event-identifier
+37 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+37 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+37 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+37 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:198:22)
+37 verbose stack     at Request.emit (events.js:98:17)
+37 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1063:14)
+37 verbose stack     at Request.emit (events.js:117:20)
+37 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+37 verbose stack     at IncomingMessage.emit (events.js:117:20)
+37 verbose stack     at _stream_readable.js:944:16
+38 verbose statusCode 403
+39 verbose pkgid aws-lambda-event-identifier
+40 verbose cwd /home/lucianopf/git/aws-lambda-event-identifier
+41 error Linux 3.19.0-30-generic
+42 error argv "node" "/usr/bin/npm" "publish" "./"
+43 error node v0.10.40
+44 error npm  v3.3.6
+45 error code E403
+46 error "You cannot publish over the previously published version 1.0.0." : aws-lambda-event-identifier
+47 error If you need help, you may report this error at:
+47 error     <https://github.com/npm/npm/issues>
+48 verbose exit [ 1, true ]
