@@ -23,9 +23,9 @@ exports.handler = function( event, context ) {
 
 ## Expected output
 
--SNS Messages: "sns"
--DynamoDb Resource: "dynamodb"
--Cloudwatch Logs: "cloudwatch"
--Scheduled events (CRON) : "scheduled"
--S3 Buckets events: "s3"
--Kinesis events: "kinesis"
+- SNS Messages: "sns"
+- DynamoDb Resource: "dynamodb"
+- Cloudwatch Logs: "cloudwatch"
+- Scheduled events (CRON) : "scheduled"
+- S3 Buckets events: "s3"
+- Kinesis events: "kinesis"
