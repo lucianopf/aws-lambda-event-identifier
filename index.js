@@ -19,7 +19,7 @@ exports.eventIdentifier = function(data){
         return "s3";
       }
       if(data.Records[0].eventSource == "aws:kinesis"){
-        return "s3";
+        return "kinesis";
       }
     }
   }
