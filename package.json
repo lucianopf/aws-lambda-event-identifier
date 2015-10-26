@@ -1,6 +1,6 @@
 {
   "name": "aws-lambda-event-identifier",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Used to return a type of input event from aws lambda",
   "main": "index.js",
   "scripts": {
