@@ -14,7 +14,8 @@
     "aws",
     "lambda",
     "event",
-    "AWS"
+    "AWS",
+    "Identifier"
   ],
   "author": "LucianoPF",
   "license": "ISC"
